@@ -5,29 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Stats preview card component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Frontend Mentor | Stats preview card component</title>
 </head>
 <body>
+  <main class="card-component">
+    <picture>
+      <source srcset="images/image-header-desktop.jpg" media="(min-width: 37.5rem)" />
+      <img class="card-component__image" src="images/image-header-mobile.jpg" alt="People having a meeting" />
+    </picture>
 
-  Get insights that help your business grow.
+    <div class="card-component__text">
+      <h1 class="main-heading">Get <span class="text-accent">insights</span> that help your business grow.</h1>
 
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
+      <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+      experience, and overall efficiency.</p>
 
-  10k+ companies
-  314 templates
-  12m+ queries
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+      <ul role="list">
+        <li role="listitem"><span class="main-heading">10k+</span><span class="stat-heading">companies</span></li>
+        <li role="listitem"><span class="main-heading">314</span><span class="stat-heading">templates</span></li>
+        <li role="listitem"><span class="main-heading">12m+</span><span class="stat-heading">queries</span></li>
+      </ul>
+    </div>
+  </main>
 </body>
 </html>
