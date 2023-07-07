@@ -81,7 +81,8 @@ picture {
 .card-component__image {
   mix-blend-mode: multiply;
   opacity: 0.8;
-  background-size: cover;
+  object-fit: cover;
+  height: 100%;
 }
 
 .card-component__text {
@@ -139,20 +140,22 @@ li .main-heading {
   letter-spacing: 0.05rem;
 }
 
-@media only screen and (min-width: 80rem) {
+@media only screen and (min-width: 50rem) {
   body {
     justify-content: center;
   }
 
   .card-component {
-    display: flex;
-    flex-direction: row-reverse;
-    max-width: 75rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    max-width: 65rem;
   }
 
   .card-component__text {
+    grid-row: 1;
     text-align: left;
-    padding: 5rem;
+    padding: 4rem;
   }
 
   .main-heading {
@@ -161,7 +164,8 @@ li .main-heading {
 
   ul {
     flex-direction: row;
-    gap: 5rem;
+    gap: 3.5rem;
+    margin-top: auto;
   }
 
   .stat-heading {
