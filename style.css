@@ -76,17 +76,17 @@ body {
   font-size: 0.9375rem;
 }
 
-  picture, img {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-  }
+picture, img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
 
 .card-component__image {
   background: var(--soft-violet);
 }
 
-.card-component__image img{
+.card-component__image img {
   mix-blend-mode: multiply;
   opacity: 0.8;
 }
