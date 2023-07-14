@@ -59,15 +59,17 @@ p, h1 {
 
 body {
   background-color: var(--very-dark-blue);
-  display: flex;
-  align-items: center;
   min-height: 100vh;
   min-height: 100dvh;
   font-size: 0.9375rem; /* 15px */
   color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-component {
+  max-width: 20rem;
   margin: 1.5rem;
   background-color: var(--dark-desaturated-blue);
   border-radius: 0.6rem;
@@ -81,16 +83,11 @@ picture {
 .card-component__image {
   mix-blend-mode: multiply;
   opacity: 0.8;
-  object-fit: cover;
-  height: 100%;
 }
 
 .card-component__text {
-  padding: 2rem;
+  margin: 2rem;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
 }
 
 .main-heading {
@@ -150,6 +147,11 @@ li .main-heading {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     max-width: 65rem;
+  }
+
+  .card-component__image {
+    object-fit: cover;
+    height: 100%;
   }
 
   .card-component__text {
